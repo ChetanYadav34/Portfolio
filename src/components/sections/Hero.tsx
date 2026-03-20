@@ -60,7 +60,7 @@ export default function Hero() {
             <div className="absolute inset-0 border border-slate-700 rounded-2xl bg-slate-900/80 backdrop-blur-sm overflow-hidden flex items-center justify-center p-2 z-10">
                {/* This can be replaced with an actual image, keeping a cool placeholder for now */}
                <div className="w-full h-full bg-slate-800 rounded-xl flex items-center justify-center overflow-hidden relative group">
-                  <Image src="/profile.jpg" alt="Chetan Yadav" fill className="object-cover transition-transform duration-500 group-hover:scale-105" priority />
+                  <Image src="/profile.jpeg" alt="Chetan Yadav" fill className="object-cover transition-transform duration-500 group-hover:scale-105" priority />
                </div>
             </div>
              {/* Decorative tech dots */}

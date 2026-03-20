@@ -5,9 +5,9 @@ import { Award } from 'lucide-react';
 import Image from 'next/image';
 
 const certificates = [
-  { id: 1, title: 'Cyber Security Essentials', issuer: 'Lovely Professional University', image: '/certificates/cyber-security.jpg' },
-  { id: 2, title: 'Cloud Computing', issuer: 'NPTEL', image: '/certificates/cloud-computing.jpg' },
-  { id: 3, title: 'Computational Theory', issuer: 'Infosys', image: '/certificates/computational-theory.jpg' },
+  { id: 1, title: 'Cyber Security Essentials', issuer: 'Lovely Professional University', image: '/certificates/cyber-security.png' },
+  { id: 2, title: 'Cloud Computing', issuer: 'NPTEL', image: '/certificates/cloud-computing.png' },
+  { id: 3, title: 'Computational Theory', issuer: 'Infosys', image: '/certificates/computational-theory.png' },
 ];
 
 export default function Certificates() {
