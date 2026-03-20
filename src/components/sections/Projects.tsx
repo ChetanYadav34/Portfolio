@@ -13,6 +13,7 @@ interface Repo {
   stargazers_count: number;
   forks_count: number;
   language: string;
+  fork: boolean;
 }
 
 const HIGHLIGHTED_PROJECTS = ['AQI-Dashboard', 'Deadlock-Handling-Toolkit']; // adjust names if exact match differs
