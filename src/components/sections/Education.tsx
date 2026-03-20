@@ -12,13 +12,13 @@ const educationData = [
   {
     degree: '12th Grade (Senior Secondary)',
     institution: 'Sarla International Academy',
-    score: 'Percentage: 60%',
+    score: 'Percentage: 60',
     year: 'Completed',
   },
   {
     degree: '10th Grade (Secondary)',
     institution: 'Dawn Vasco School',
-    score: 'Percentage: 59%',
+    score: 'Percentage: 59',
     year: 'Completed',
   }
 ];
@@ -27,7 +27,7 @@ export default function Education() {
   return (
     <section className="py-24 bg-slate-900/50">
       <div className="container mx-auto px-6 max-w-4xl">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -50,9 +50,9 @@ export default function Education() {
               className="relative pl-8 md:pl-12 border-l border-slate-700"
             >
               <div className="absolute -left-[18px] top-1 bg-background p-2 rounded-full border border-slate-700 group flex items-center justify-center">
-                 <GraduationCap size={18} className="text-accent" />
+                <GraduationCap size={18} className="text-accent" />
               </div>
-              
+
               <div className="bg-slate-800/30 border border-slate-800 rounded-xl p-6 hover:border-accent/40 transition-colors group">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
                   <h3 className="text-xl font-bold text-white group-hover:text-accent transition-colors">
