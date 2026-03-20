@@ -2,10 +2,12 @@
 import { motion } from 'framer-motion';
 import { Award } from 'lucide-react';
 
+import Image from 'next/image';
+
 const certificates = [
-  { id: 1, title: 'Cyber Security Essentials', issuer: 'Cisco Networking Academy', image: '' },
-  { id: 2, title: 'Full Stack Web Development', issuer: 'LPU Add-On Course', image: '' },
-  // Placeholders for future certificates
+  { id: 1, title: 'Cyber Security Essentials', issuer: 'Lovely Professional University', image: '/certificates/cyber-security.jpg' },
+  { id: 2, title: 'Cloud Computing', issuer: 'NPTEL', image: '/certificates/cloud-computing.jpg' },
+  { id: 3, title: 'Computational Theory', issuer: 'Infosys', image: '/certificates/computational-theory.jpg' },
 ];
 
 export default function Certificates() {
@@ -39,8 +41,7 @@ export default function Certificates() {
             >
               <div className="aspect-video bg-slate-900 flex items-center justify-center relative">
                 {cert.image ? (
-                  // Uses standard img tag or Next Image when actual pictures exist
-                  <div className="w-full h-full bg-slate-700"></div>
+                  <Image src={cert.image} alt={cert.title} fill className="object-cover" />
                 ) : (
                   <div className="absolute inset-0 flex flex-col items-center justify-center opacity-50">
                      <Award size={48} className="text-accent mb-2" />

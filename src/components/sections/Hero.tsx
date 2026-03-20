@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -58,9 +59,8 @@ export default function Hero() {
             <div className="absolute inset-0 border-2 border-accent/30 rounded-2xl transform translate-x-4 translate-y-4" />
             <div className="absolute inset-0 border border-slate-700 rounded-2xl bg-slate-900/80 backdrop-blur-sm overflow-hidden flex items-center justify-center p-2 z-10">
                {/* This can be replaced with an actual image, keeping a cool placeholder for now */}
-               <div className="w-full h-full bg-slate-800 rounded-xl flex items-center justify-center overflow-hidden relative">
-                  <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-accent via-transparent to-transparent" />
-                  <span className="text-slate-600 font-mono text-sm">[Profile Image Placeholder]</span>
+               <div className="w-full h-full bg-slate-800 rounded-xl flex items-center justify-center overflow-hidden relative group">
+                  <Image src="/profile.jpg" alt="Chetan Yadav" fill className="object-cover transition-transform duration-500 group-hover:scale-105" priority />
                </div>
             </div>
              {/* Decorative tech dots */}
