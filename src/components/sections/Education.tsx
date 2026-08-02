@@ -1,12 +1,12 @@
-'use client';
-import { motion } from 'framer-motion';
-import { GraduationCap } from 'lucide-react';
+'use client'
+import { motion } from 'framer-motion'
+import { GraduationCap } from 'lucide-react'
 
 const educationData = [
   {
     degree: 'B.Tech in Computer Science and Engineering',
     institution: 'Lovely Professional University',
-    score: 'CGPA: 7.47',
+    score: 'CGPA: 7.5',
     year: 'Present',
   },
   {
@@ -20,8 +20,8 @@ const educationData = [
     institution: 'Dawn Vasco School',
     score: 'Percentage: 59',
     year: 'Completed',
-  }
-];
+  },
+]
 
 export default function Education() {
   return (
@@ -30,7 +30,7 @@ export default function Education() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
@@ -62,7 +62,9 @@ export default function Education() {
                     {edu.year}
                   </span>
                 </div>
-                <p className="text-lg text-slate-300 font-medium mb-2">{edu.institution}</p>
+                <p className="text-lg text-slate-300 font-medium mb-2">
+                  {edu.institution}
+                </p>
                 <p className="text-slate-400 font-mono text-sm">{edu.score}</p>
               </div>
             </motion.div>
@@ -70,5 +72,5 @@ export default function Education() {
         </div>
       </div>
     </section>
-  );
+  )
 }
